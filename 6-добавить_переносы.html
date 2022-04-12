@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"
+        src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=RtjYG1RtotMfVksnjngVU38__FSE9mcoDFS4i_CRF-edg5j8RpiI3izfj0nXolFe4gGm0idLoiMo1hSZYkegTldx6ZRYz5eCKFsUChdJZe5D9iY3SeiMFwz_eNRqQ_Yzpv_ZFdcpFAzEMODejJTZq6owLYMzYdEz9WEN68uGuSOoVefEuzijZmhu5bz8rUCO14d9XLLMoWmfaW0hSUXuqMICUf7b1X9X5a2qRazCdhP5zKo5zXhvPXluo8kxOMcZVdoA2nY_nmspK7O5RrKUd6a7jNxKALu4n-anBN7lsFY69Oc-MH0tgRuzqWRx5lPoWx54fVCM0-Y5xivpB30Iw24rifni09X1bZ_wL3KhY1bTbSSBhHa35sdcQU2sMtQHiwvBPB3iX_egRr7Oi8rkSA9--E59cHfkew0ASLbqEZiY6h8UysTNVLJpQgsivoOYa7mk7Di98M3Hhuo4QlAg68g7I9NrtlH0Cnrt1t6zjuKnh8kC08iAHI0d1s5ZGOu3y4sLHtQeK27L-jF6-Qa7fzcVndr-MIFluEVWvba-fPjgXf50dovWeweYrAsict2m5uCtO6Oi68vbeKLUhjAIeJeNIIuDOoTdfpMmP15kl7quSzkzjFD1FkCcL4CVEmm8vfTQdISgyFRDF3xT1kX2B3HtPxTO3guQeayFO9YnbCiti0z42QFYddDaHVe5MKumOP8scO-hmw4MOMvyanQWxoauFlK3zFDxKv1OQikVV-dtdFaOXvGv13o-5OrzLnvGOKJeFNIUWyvcQODWpaajdvGBEf02d8JvweT3JuiL9J3u-0fVThGOkzYVBb3LXlQlzSoVJLn6ezZhzTc9jXUhvVMpq-Y4zHwxR3i0IGC4Uh7tbEJtHM_cbu0CL9FafC37_kY8eKZo0asGLtNOBN_PUOdR7F-qqNysdAmA-fG-q5pPaNMj8yJYsQHO-C7dGsRcHTo3EoaqVr_d6l3MPgyAR1B8jzWLqOhCD6ULNqjEetdMHGDSTspsAmUrahBiCoAl55a9rDnG8f5AAbvF8YYHROfYOwUazXRFw8nrvUHpbI_vpkC1GKE3QRiLAC2d7RXN097jSOADPZrHkbE6h7OQDfIlcUtgVOy80q1pxbO7ZP7yMA5y5osFKjyBVQRNw6A1mhfSpDiNmq9p3QnzLWJqNAKJRuPWQHHDhegLSxmgqllLA7n-RXr7SFgmBgRpi3aT6crTlHFA7xWbX2bYItKqvzW-FjaJjSpfQqqjdHfE1B4RaSgeVQ5Yfp2vcNau0vPjWTPhLQrZMSycnALAQEpqW8Z9ife6k4TAPgQ9xyfAkNUZCox66uOYQT3UymRveNqpLOEldeLCCRjESWzaFV86_0XsetixpYYx7q_5impLCS64qj-Z6LkLlUrl53z9lasRvKvdob-bZSU1TS3d7TS-BZGiANP2Sw61-iW4N1eDsAD-VX1oP3GqvO4B5VbtBVd96JIsavcJDnKgZ8-f53k6CRoCtdwUyOe0ofRx2SpbPb7goxQrpZLwp6YpenVhSq8TAgMtSc5XQAYvo6r97iLhVByV5Wi318Yqe5otpANqUTPvyn9Jvrac84SNR5L9kzmSh9N_8HH4TDdSdF116nBzwv5UHtak_t9GQeUrDfbD9iUeHUcnDshX0wFrldSgE0LkVI_cCjJdzmDlulJqrbrLuRSe8N-itVSebAHNKJoCZRNxbRJeD5UrIHqqPGXhUX1XZiMJ7T_HSGNreX4psHpnVvqsXJFoJ-dNFfTU4Kp-EBiD9Z8pxLEDLYBp-bbOAbyoTjOIczrbx_Xh9GJLTf4gKe7Mif5OozJZ66Hl5MOnUFfawEv7PmUyYavS0x9vAh8p"
+        charset="UTF-8"></script>
+</head>
+
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+    <!-- 
+        Задание. Инпуты идут один за другим, надо сделать чтобы после каждого инпута
+        появился тег br, чтобы инпуты стали стоять один под другим. Для этого:
+        1. Получите все инпуты, например с помощью querySelectorAll.
+        2. Переберите их с помощью цикла или forEach, и после каждого инпута
+        встявляйте тег br, например с помощью insertAdjacentHTML.
+    -->
+
+    <script>
+        'use strict'
+        let inputEl = document.querySelectorAll("input");
+        inputEl.forEach(input => {
+            input.insertAdjacentHTML("afterend", "<br>");
+        });
+
+    </script>
+</body>
+
+</html>
